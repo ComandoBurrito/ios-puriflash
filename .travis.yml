@@ -1,5 +1,4 @@
 language: csharp
-chsarp:
-  - lastest
 
+os: windows
 solution: Json_BLE.sln
