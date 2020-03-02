@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json_BLE.Android", "Json_BL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json_BLE.iOS", "Json_BLE\Json_BLE.iOS\Json_BLE.iOS.csproj", "{2240B5E2-9657-432E-A3C3-1669B675C6B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json_BLE", "Json_BLE\Json_BLE\Json_BLE.csproj", "{0EF38A49-71F4-4D9B-B01A-1D16883122C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Json_BLE", "Json_BLE\Json_BLE\Json_BLE.csproj", "{0EF38A49-71F4-4D9B-B01A-1D16883122C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D2BD6EC5-31C3-4582-A798-C409401D2DF8}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
