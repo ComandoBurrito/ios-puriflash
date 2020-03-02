@@ -1,3 +1,5 @@
 language: csharp
 mono:
   - latest
+
+solution: Json_BLE.sln
