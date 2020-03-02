@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Json_BLE.MainPage"
+             Padding = "0,50,0,0"
+             Title="Hello world!">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal"  >
+                <Button Text="Pick .json" Clicked="PickFile_Clicked" BackgroundColor="#404040" TextColor="White" FontAttributes="Bold" WidthRequest="90"/>
+                <Button Text="Pick image" Clicked="PickImage_Clicked" BackgroundColor="#404040" TextColor="White" FontAttributes="Bold" WidthRequest="90"/>
+                <Button Text="Pick .zip" Clicked="PickZip_Clicked" BackgroundColor="#404040" TextColor="White" FontAttributes="Bold" WidthRequest="90"/>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#404040" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label x:Name="ShowMsgLabel" Text="" BackgroundColor="#404040" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" WidthRequest="150"/>
+            </StackLayout>
+
+            <ScrollView>
+                <StackLayout BackgroundColor="#404040" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label x:Name="FileNameLabel" Text="" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label x:Name="FilePathLabel" Text="" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label x:Name="FileJsonLabel" Text="" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label x:Name="FileBase64Label" Text="" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label x:Name="FileTextLabel" Text="" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Image x:Name="FileImagePreview" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
