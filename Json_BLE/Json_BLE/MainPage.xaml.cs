@@ -9,6 +9,7 @@ using Xamarin.Forms;
 using System.IO;
 
 
+
 /// <summary>
 /// IMPORTANT STUFF
 /// UTType List : https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html
@@ -16,7 +17,7 @@ using System.IO;
 namespace Json_BLE
 {
     [DesignTimeVisible(false)]
-    public partial class MainPage : ContentPage
+    public partial class MainPage : TabbedPage
     {
         public MainPage()
         {
@@ -25,7 +26,30 @@ namespace Json_BLE
 
         //Variables
         string txtSourceCode = null;
+        bool switchButton = true;
 
+        private void EnumerateButton_Clicked(object sender, EventArgs args)
+        {
+            switchButton = !switchButton;
+            if (switchButton == false)
+            {
+                //StartBleDeviceWatcher();
+                EnumerateButton.Text = "Stop enumerating";
+                LoadIndicator.IsRunning = true;
+                LoadIndicator.IsVisible = true;
+                LoadIndicator.IsEnabled = true;
+                //rootPage.NotifyUser($"Device watcher started.", NotifyType.StatusMessage);
+            }
+            else
+            {
+                //StopBleDeviceWatcher();
+                EnumerateButton.Text = "Start enumerating";
+                LoadIndicator.IsRunning = false;
+                LoadIndicator.IsVisible = false;
+                LoadIndicator.IsEnabled = false;
+                //rootPage.NotifyUser($"Device watcher stopped.", NotifyType.StatusMessage);
+            }
+        }
 
         private async void PickFile_Clicked(object sender, EventArgs args)
         {
