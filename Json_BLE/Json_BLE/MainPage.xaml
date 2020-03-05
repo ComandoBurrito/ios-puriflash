@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="Json_BLE.MainPage">
     <ContentPage Title="Device sync" IconImageSource="Sync">
-        <StackLayout Padding="0,60,0,0">
+        <StackLayout Padding="0,30,0,0">
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
                 <Button x:Name="EnumerateButton" Text="Start enumerating" Clicked="EnumerateButton_Clicked" BackgroundColor="#3498db" TextColor="White" FontAttributes="Bold" WidthRequest="135"/>
             </StackLayout>
@@ -18,7 +18,7 @@
     </ContentPage>
     
     <ContentPage Title="File transfer" IconImageSource="Share">
-        <StackLayout BackgroundColor="White" Padding="0,60,0,0">
+        <StackLayout BackgroundColor="White" Padding="0,30,0,0">
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
                 <Button Text="Pick .json" Clicked="PickFile_Clicked" BackgroundColor="#3498db" TextColor="White" FontAttributes="Bold" WidthRequest="90"/>
                 <Button Text="Pick image" Clicked="PickImage_Clicked" BackgroundColor="#3498db" TextColor="White" FontAttributes="Bold" WidthRequest="90"/>
