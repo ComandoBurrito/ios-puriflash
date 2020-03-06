@@ -2,7 +2,7 @@
 
 # [iOS Puriflash](https://github.com/ComandoBurrito/ios-puriflash) [![Build Status](https://travis-ci.org/ComandoBurrito/ios-puriflash.svg?branch=master)](https://travis-ci.org/ComandoBurrito/ios-puriflash)
 
-<img src = "https://user-images.githubusercontent.com/26191102/75690132-a28f9e80-5ca2-11ea-81db-48d112c005bb.PNG" width = "350" >
+<img src = "https://user-images.githubusercontent.com/26191102/76070712-46c06080-5f95-11ea-841c-6e186a24ca1f.png" width = "350" >
 
 
 Bluetooth LE Puriflash prototype for iOS.
